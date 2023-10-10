@@ -1,11 +1,11 @@
 // import React from 'react'
 import "./style.scss"
-const SearchResult = () => {
+const TopRated = () => {
   return (
     <div>
-      Search Result
+      TopRated
     </div>
   )
 }
 
-export default SearchResult
+export default TopRated

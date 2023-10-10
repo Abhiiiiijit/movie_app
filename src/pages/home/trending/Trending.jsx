@@ -1,11 +1,11 @@
 // import React from 'react'
 import "./style.scss"
-const SearchResult = () => {
+const Trending = () => {
   return (
     <div>
-      Search Result
+      Trending
     </div>
   )
 }
 
-export default SearchResult
+export default Trending

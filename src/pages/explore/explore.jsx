@@ -1,7 +1,7 @@
 // import React from 'react'
 import "./style.scss"
 
-const explore = () => {
+const Explore = () => {
   return (
     <div>
       
@@ -9,4 +9,4 @@ const explore = () => {
   )
 }
 
-export default explore
+export default Explore
