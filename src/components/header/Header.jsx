@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { HiOutlineSearch } from "react-icons/hi";
 import { SlMenu } from "react-icons/sl";
 import { VscChromeClose } from "react-icons/vsc";
@@ -7,7 +7,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./Header.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
-import logo from "../../assets/logo_bg_2.png";
+import logo from "../../assets/logo_bg_6.png";
 
 const Header = () => {
   const [show, setShow] = useState("top");
@@ -23,7 +23,9 @@ const Header = () => {
   }, [location]);
 
   const controlNavbar = () => {
-    if (window.scrollY > 200) {
+    // Given the measure of Scroll Down
+    // console.log(window.scrollY);
+    if (window.scrollY > 100) {
       if (window.scrollY > lastScrollY && !mobileMenu) {
         setShow("hide");
       } else {
