@@ -33,13 +33,13 @@ const Banner = () => {
       <div className="heroBanner">
         {!loading && (
           <div className="backdrop-img">
-            <img src={background} alt="Popular Or Top Rated" />
+            <Img src={background} alt="Popular Or Top Rated" />
           </div>
         )}
         <div className="opacity-layer"></div>
         <ContentWrapper>
           <div className="heroBannerContent">
-            <span className="title">Welcome Cinephile</span> &nbsp;
+            <span className="title">Welcome Cinephile.</span> &nbsp;
             <span className="subTitle">Discover Now & Explore Now......</span>
             <div className="searchInput">
               <input
