@@ -19,6 +19,7 @@ const Header = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // Basically will start the scroll from the top when the location changes when we scroll down a lot
     window.scrollTo(0, 0);
   }, [location]);
 
@@ -38,6 +39,7 @@ const Header = () => {
   };
 
   useEffect(() => {
+    // Scrolling Effect
     window.addEventListener("scroll", controlNavbar);
     return () => {
       window.removeEventListener("scroll", controlNavbar);
@@ -45,6 +47,7 @@ const Header = () => {
   }, [lastScrollY]);
 
   const searchQueryHandler = (event) => {
+    // Search handler to
     if (event.key === "Enter" && query.length > 0) {
       navigate(`/search/${query}`);
       setTimeout(() => {
@@ -54,16 +57,19 @@ const Header = () => {
   };
 
   const openSearch = () => {
+    // Mobile View and Window View Switch
     setMobileMenu(false);
     setShowSearch(true);
   };
 
   const openMobileMenu = () => {
+    // Mobile View Changes
     setMobileMenu(true);
     setShowSearch(false);
   };
 
   const navigationHandler = (type) => {
+    // Top Navigation
     if (type === "movie") {
       navigate("/explore/movie");
     } else {

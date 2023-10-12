@@ -29,7 +29,7 @@
         font-size: 16px;
       }
       &:hover {
-        color: var(--pink);
+        color: var(--orange);
       }
     }
   }
@@ -50,7 +50,9 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    .icon {
+    .iconInsta,
+    .iconLinkedin,
+    .iconGitHub {
       width: 50px;
       height: 50px;
       border-radius: 50%;
@@ -60,10 +62,18 @@
       justify-content: center;
       cursor: pointer;
       transition: all ease 0.3s;
-      &:hover {
-        box-shadow: 0 0 0.625em var(--pink);
-        color: var(--pink);
-      }
     }
   }
+}
+.iconInsta:hover {
+  box-shadow: 0 0 0.625em var(--pink);
+  color: var(--pink);
+}
+.iconGitHub:hover {
+  box-shadow: 0 0 0.625em var(--white);
+  color: var(--white);
+}
+.iconLinkedin:hover {
+  box-shadow: 0 0 0.625em var(--black-lighter);
+  color: var(--black-lighter);
 }

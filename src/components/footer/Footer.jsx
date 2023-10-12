@@ -1,11 +1,5 @@
 // import React from "react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaLinkedin,
-  FaGithub,
-} from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 
@@ -16,24 +10,22 @@ const Footer = () => {
     <footer className="footer">
       <ContentWrapper>
         <ul className="menuItems">
-          <li className="menuItem">Terms Of Use</li>
+          <li className="menuItem">Terms and Condition</li>
           <li className="menuItem">Privacy-Policy</li>
           <li className="menuItem">About</li>
           <li className="menuItem">Blog</li>
           <li className="menuItem">FAQ</li>
         </ul>
-        <div className="infoText">
-          Copyright | 2023 | @abhiiiiiijeet
-        </div>
+        <div className="infoText">Copyright | 2023 | @abhiiiiiijeet</div>
         <div className="socialIcons">
-          <span className="icon">
+          <span className="iconInsta">
             <FaInstagram />
-          </span> 
-          <span className="icon">
+          </span>
+          <span className="iconLinkedin">
             <FaLinkedin />
           </span>
-          <span className="icon">
-            <FaGithub/>
+          <span className="iconGitHub">
+            <FaGithub />
           </span>
         </div>
       </ContentWrapper>
