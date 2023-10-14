@@ -16,6 +16,7 @@ const Footer = () => {
           <li className="menuItem">Blog</li>
           <li className="menuItem">FAQ</li>
         </ul>
+        {/* <div className="infoText"></div> */}
         <div className="infoText">Copyright | 2023 | @abhiiiiiijeet</div>
         <div className="socialIcons">
           <span className="iconInsta">
@@ -25,7 +26,11 @@ const Footer = () => {
             <FaLinkedin />
           </span>
           <span className="iconGitHub">
+            {/* <a href="https://www.google.com">
+              <button> */}
             <FaGithub />
+            {/* </button>
+            </a> */}
           </span>
         </div>
       </ContentWrapper>
