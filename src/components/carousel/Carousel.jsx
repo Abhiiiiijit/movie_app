@@ -1,3 +1,4 @@
+import React from "react";
 import { useRef } from "react";
 import {
   BsFillArrowLeftCircleFill,
@@ -11,7 +12,7 @@ import Img from "../../components/lazyLoadImage/Img";
 import PosterFallback from "../../assets/no-poster.png";
 import "./style.scss";
 import dayjs from "dayjs";
-import CircleRating from "../circleRating/circleRating";
+import CircleRating from "../../components/circleRating/CircleRating";
 import Genres from "../genres/Genres";
 
 const Carousel = ({ data, loading, endpoint }) => {
